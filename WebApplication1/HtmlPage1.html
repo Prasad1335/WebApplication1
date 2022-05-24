@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .frm {
+            padding: 10px;
+            border: 1px solid orange;
+            width: 200px;
+        }
+
+        .btn {
+            padding: 10px;
+            color: red;
+            border: 2px solid red;
+        }
+
+            .btn:hover {
+                padding: 10px;
+                color: white;
+                background-color: springgreen;
+                border: 1px solid white;
+                font-size: 15px;
+            }
+
+        form {
+            border: 2px solid orange;
+            width: 400px;
+            padding: 50px;
+            background-color: lightyellow;
+        }
+
+        h1 {
+            color: coral;
+            font-size: 50px;
+        }
+
+        .rd {
+            height: 15px;
+            width: 15px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="WebForm1.aspx" method="post">
+        <div><h1>Asp.Net WebFrom</h1></div><hr />
+        <table cellspacing="10">
+            <tr>
+                <td>FirstName :</td>
+                <td><input type="text" class="frm" name="firstname" placeholder="enter first name" /></td>
+            </tr>
+            <tr>
+                <td>LastName :</td>
+                <td><input type="text" class="frm" name="lastname" placeholder="enter last name" /></td>
+            </tr>
+            <tr>
+                <td>DOB :</td>
+                <td><input type="date" class="frm" name="dob" /></td>
+            </tr>
+
+            <tr>
+                <td>Education :</td>
+                <td>
+                    <select ty name="education" class="frm">
+                        <option value="">select</option>
+                        <option>graduate</option>
+                        <option>postgraduate</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>gender :</td>
+                <td>
+                    <input type="radio" class="rd" name="gender" value="male" />male
+                    <input type="radio" class="rd" name="gender" value="female" />female
+                </td>
+            </tr>
+            <tr>
+                <td>Address :</td>
+                <td><textarea class="frm" type="text" name="address" rows="3" placeholder="enter address"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="male" required />Accept terms And Condition </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="btn" type="submit">
+                    <input class="btn" type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
